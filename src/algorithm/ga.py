@@ -130,7 +130,7 @@ class Ga:
         func()
         self.save_best()
 
-    def do_init(self, pop=None):
+    def do_init(self):
         pass
 
     def do_crossover(self, i, j, p):
@@ -140,9 +140,6 @@ class Ga:
         pass
 
     def do_tabu_search(self, i):
-        pass
-
-    def do_key_block_move(self, i):
         pass
 
     def reach_max_stay_generation(self, g):
@@ -156,11 +153,11 @@ class Ga:
             return True
         return False
 
-    def do_evolution(self, pop=None, exp_no=None):
+    def do_evolution(self, exp_no=None):
         exp_no = "" if exp_no is None else exp_no
         Utils.print("{}Evolution {}  start{}".format("=" * 48, exp_no, "=" * 48), fore=Utils.fore().LIGHTYELLOW_EX)
         self.clear()
-        self.do_init(pop)
+        self.do_init()
         self.do_selection()
         for g in range(1, self.max_generation + 1):
             if self.reach_best_known_solution():
@@ -190,13 +187,10 @@ class GaHfsp(Ga):
     def decode(self, code):
         return self.schedule.decode(code)
 
-    def do_init(self, pop=None):
+    def do_init(self):
         self.record[0].append(time.perf_counter())
         for i in range(self.pop_size):
-            if pop is None:
-                code = Code.sequence_permutation(self.schedule.n)
-            else:
-                code = pop[0][i].code
+            code = Code.sequence_permutation(self.schedule.n)
             info = self.decode(code)
             obj, fit = self.get_obj_fit(info)
             self.pop[0].append(info)

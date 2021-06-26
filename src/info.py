@@ -230,6 +230,12 @@ class Info(GanttChart):
             file = file + ".csv"
         self.save_start_end(file)
 
+    """"
+    =============================================================================
+    Genetic operator: permutation based code
+    =============================================================================
+    """
+
     def ga_crossover_sequence_permutation(self, info):
         func_dict = {
             Crossover.default: self.ga_crossover_sequence_permutation_pmx,
@@ -248,12 +254,6 @@ class Info(GanttChart):
         }
         func = func_dict[self.schedule.ga_operator[Mutation.name]]
         return func()
-
-    """"
-    =============================================================================
-    Genetic operator: permutation based code
-    =============================================================================
-    """
 
     def ga_crossover_sequence_permutation_pmx(self, info):
         code1 = deepcopy(self.code)
