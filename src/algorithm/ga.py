@@ -51,10 +51,6 @@ class Ga:
     def decode(self, code):
         pass
 
-    def dislocation(self, i, direction=0):
-        code1 = self.pop[0][i].dislocation_operator(direction)
-        self.append_individual(self.decode(code1))
-
     def update_best(self):
         self.best[2] = max(self.pop[2])
         index = self.pop[2].index(self.best[2])
@@ -179,12 +175,6 @@ class Ga:
                 if self.schedule.para_tabu:
                     self.do_tabu_search(i)
                 j = np.random.choice(np.delete(np.arange(self.pop_size), i), 1, replace=False)[0]
-                if p[i] < self.rc:
-                    code1, code2 = self.pop[0][i].code, self.pop[0][j].code
-                    if self.schedule.para_dislocation and Utils.similarity(code1, code2) >= 0.5:
-                        self.dislocation(i, direction=0)
-                        self.dislocation(j, direction=1)
-                        p[i] = 1
                 self.do_crossover(i, j, p[i])
                 self.do_mutation(i, q[i])
             self.do_selection()

@@ -12,7 +12,6 @@ class Schedule:  # 调度资源融合类
         self.ga_operator = {Crossover.name: Crossover.default, Mutation.name: Mutation.default,
                             Selection.name: Selection.default}
         self.para_tabu = False
-        self.para_dislocation = False
 
     def clear(self):  # 解码前要进行清空, 方便快速地进行下一次解码
         for i in self.job.keys():

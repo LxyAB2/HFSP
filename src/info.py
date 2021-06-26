@@ -382,13 +382,3 @@ class Info(GanttChart):
             except ValueError:
                 pass
         return code
-
-    """"
-    =============================================================================
-    Other operator
-    =============================================================================
-    """
-
-    def dislocation_operator(self, direction=0):
-        code = deepcopy(self.code)
-        return np.hstack([code[1:], code[0]]) if direction == 0 else np.hstack([code[-1], code[:-1]])

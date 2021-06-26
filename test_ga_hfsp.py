@@ -18,9 +18,8 @@ def main(instance="example"):
     ga.schedule.ga_operator[Crossover.name] = Crossover.pmx
     ga.schedule.ga_operator[Mutation.name] = Mutation.tpe
     ga.schedule.ga_operator[Selection.name] = Selection.roulette
-    ga.schedule.para_tabu = False
-    ga.schedule.para_dislocation = False
-    GaTemplate(save="GA_HFSP", instance=instance, ga=ga, n_exp=10)
+    ga.schedule.para_tabu = True
+    GaTemplate(save="GA-TS_HFSP", instance=instance, ga=ga, n_exp=10)
 
 
 def exp():
