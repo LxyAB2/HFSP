@@ -20,7 +20,7 @@ def main(instance="example"):
     ga.schedule.ga_operator[Selection.name] = Selection.roulette
     ga.schedule.para_tabu = True
     ga.schedule.para_dislocation = False
-    GaTemplate(save="GA_HFSP", instance=instance, ga=ga, n_exp=1)
+    GaTemplate(save="GA_HFSP", instance=instance, ga=ga, n_exp=10)
 
 
 def exp():
