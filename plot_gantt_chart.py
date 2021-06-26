@@ -4,7 +4,8 @@ __doc__ = """
 
 from src import *
 
-save, instance, exp = "GA-TS_HFSP", "real1", "2"
+save, instance, exp = "GA_HFSP", "real1", "1"
+# save, instance, exp = "GA-TS_HFSP", "real1", "1"
 file_dir = "./%s/%s/GanttChart" % (save, instance)  # 甘特图数据文件所在目录
 save_dir = "./%s/%s/GanttChartPngHtml" % (save, instance)  # 生成的甘特图保存目录
 file = "%s.csv" % exp  # 甘特图数据文件

@@ -41,6 +41,7 @@ class Hfsp(Schedule):
                 self.job[i].task[j].start = start[choice]
                 self.job[i].task[j].end = end[choice]
                 self.decode_update_machine_idle(i, j, k, r, start[choice])
+            # copy_code = code[np.argsort([self.job[i].task[j].end for i in code])]
             copy_code = copy_code[np.argsort([self.job[i].task[j].end for i in copy_code])]
             j += 1
         return Info(self, code, mac=mac)
@@ -63,6 +64,7 @@ class Hfsp(Schedule):
                         self.job[i].task[j].end = early_start + p
                         self.decode_update_machine_idle(i, j, k, r, self.job[i].task[j].start)
                         break
+            # copy_code = code[np.argsort([self.job[i].task[j].end for i in code])]
             copy_code = copy_code[np.argsort([self.job[i].task[j].end for i in copy_code])]
             j += 1
         return Info(self, code, mac=mac)
