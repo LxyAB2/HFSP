@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f75b47-6032-4fb8-bbf2-6399ed89c19d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/Code/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/GanttChart/1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/GanttChartPngHtml/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/GanttChartPngHtml/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/Record/1.csv" beforeDir="false" />
+    <list default="true" id="63f75b47-6032-4fb8-bbf2-6399ed89c19d" name="Default Changelist" comment="Add files via upload.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_gantt_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_gantt_chart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_ga_hfsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_ga_hfsp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +20,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test_ga_hfsp">
+    <configuration name="plot_gantt_chart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="HFSP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_gantt_chart.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_ga_hfsp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HFSP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +71,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_ga_hfsp" />
+        <item itemvalue="Python.plot_gantt_chart" />
       </list>
     </recent_temporary>
   </component>
@@ -68,6 +84,29 @@
       <option name="presentableId" value="Default" />
       <updated>1624697155690</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add files via upload.">
+      <created>1624697765963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624697765963</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add files via upload." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload." />
   </component>
 </project>
