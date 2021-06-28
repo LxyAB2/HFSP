@@ -31,7 +31,7 @@ class Schedule:  # 调度资源融合类
     def makespan(self):  # 工期
         return max([machine.end for machine in self.machine.values()])
 
-    def any_task_not_done(self):  # 解码：判断是否解码结束（基于机器的编码、混合流水车间、考虑作息时间的流水车间）
+    def any_task_not_done(self):  # 解码：判断是否解码结束
         return any([any([task.start is None for task in job.task.values()]) for job in self.job.values()])
 
     def add_machine(self, name=None, index=None):  # 添加机器
