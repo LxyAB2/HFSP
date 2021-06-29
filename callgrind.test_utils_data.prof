@@ -1,0 +1,343 @@
+event: ns : Nanoseconds
+events: ns
+summary: 55595400
+fl=<__array_function__ internals>
+fn=prod
+2 833000
+cfl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+cfn=_prod_dispatcher
+calls=180 2907
+2 136700
+cfl=~
+cfn=<built-in method numpy.core._multiarray_umath.implement_array_function>
+calls=180 0
+2 9398400
+
+fl=F:\Python\lib\codecs.py
+fn=__init__
+186 12400
+
+fl=F:\Python\lib\genericpath.py
+fn=exists
+16 16700
+cfl=~
+cfn=<built-in method nt.stat>
+calls=2 0
+16 1038500
+
+fl=F:\Python\lib\ntpath.py
+fn=_get_bothseps
+34 9200
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+34 5000
+
+fl=F:\Python\lib\ntpath.py
+fn=splitdrive
+124 33600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+124 1200
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+124 1700
+cfl=~
+cfn=<built-in method nt.fspath>
+calls=2 0
+124 1000
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=2 0
+124 7000
+
+fl=F:\Python\lib\ntpath.py
+fn=split
+180 48000
+cfl=F:\Python\lib\ntpath.py
+cfn=_get_bothseps
+calls=2 34
+180 14200
+cfl=F:\Python\lib\ntpath.py
+cfn=splitdrive
+calls=2 124
+180 44500
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+180 1000
+cfl=~
+cfn=<built-in method nt.fspath>
+calls=2 0
+180 3300
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=2 0
+180 4400
+
+fl=F:\Python\lib\os.py
+fn=makedirs
+200 49600
+cfl=F:\Python\lib\genericpath.py
+cfn=exists
+calls=2 16
+200 1055200
+cfl=F:\Python\lib\ntpath.py
+cfn=split
+calls=2 180
+200 115400
+cfl=~
+cfn=<built-in method nt.mkdir>
+calls=2 0
+200 1154100
+
+fl=G:\Python\HFSP\src\utils.py
+fn=print
+51 16600
+cfl=~
+cfn=<built-in method builtins.print>
+calls=2 0
+51 258300
+
+fl=G:\Python\HFSP\src\utils.py
+fn=make_dir
+55 29500
+cfl=F:\Python\lib\os.py
+cfn=makedirs
+calls=2 200
+55 2374300
+
+fl=G:\Python\HFSP\src\utils.py
+fn=create_data_hfsp
+177 6761400
+cfl=G:\Python\HFSP\src\utils.py
+cfn=make_dir
+calls=2 55
+177 2403800
+cfl=~
+cfn=<built-in method builtins.sum>
+calls=122 0
+177 133100
+cfl=~
+cfn=<built-in method io.open>
+calls=2 0
+177 12206600
+cfl=~
+cfn=<method '__exit__' of '_io._IOBase' objects>
+calls=2 0
+177 844900
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=340 0
+177 193600
+cfl=~
+cfn=<method 'astype' of 'numpy.ndarray' objects>
+calls=60 0
+177 324800
+cfl=~
+cfn=<method 'choice' of 'numpy.random.mtrand.RandomState' objects>
+calls=180 0
+177 23336600
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=2 0
+177 10600
+cfl=~
+cfn=<method 'uniform' of 'numpy.random.mtrand.RandomState' objects>
+calls=60 0
+177 8699000
+cfl=~
+cfn=<method 'writelines' of '_io._IOBase' objects>
+calls=22 0
+177 681000
+
+fl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+fn=write:40
+40 16100
+cfl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+cfn=write:160
+calls=4 160
+40 203900
+
+fl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+fn=closed
+55 8800
+
+fl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+fn=write:160
+160 46900
+cfl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+cfn=reset_all
+calls=4 170
+160 73500
+cfl=~
+cfn=<method 'flush' of '_io.TextIOWrapper' objects>
+calls=4 0
+160 8700
+cfl=~
+cfn=<method 'write' of '_io.TextIOWrapper' objects>
+calls=4 0
+160 74800
+
+fl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+fn=reset_all
+170 28000
+cfl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+cfn=closed
+calls=4 55
+170 8800
+cfl=~
+cfn=<method 'write' of '_io.TextIOWrapper' objects>
+calls=4 0
+170 36700
+
+fl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+fn=_wrapreduction
+70 1957900
+cfl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+cfn=<dictcomp>
+calls=180 71
+70 370200
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=180 0
+70 508300
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=180 0
+70 129200
+cfl=~
+cfn=<method 'reduce' of 'numpy.ufunc' objects>
+calls=180 0
+70 4813500
+
+fl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+fn=<dictcomp>
+71 370200
+
+fl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+fn=_prod_dispatcher
+2907 136700
+
+fl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+fn=prod
+2912 987700
+cfl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+cfn=_wrapreduction
+calls=180 70
+2912 7779100
+
+fl=~
+fn=<built-in method builtins.getattr>
+0 508300
+
+fl=~
+fn=<built-in method builtins.isinstance>
+0 6200
+
+fl=~
+fn=<built-in method builtins.len>
+0 2700
+
+fl=~
+fn=<built-in method builtins.print>
+0 38300
+cfl=G:\Python\venv\python3.9\lib\site-packages\colorama\ansitowin32.py
+cfn=write:40
+calls=4 40
+0 220000
+
+fl=~
+fn=<built-in method builtins.sum>
+0 139300
+
+fl=~
+fn=<built-in method io.open>
+0 12194200
+cfl=F:\Python\lib\codecs.py
+cfn=__init__
+calls=2 186
+0 12400
+
+fl=~
+fn=<built-in method nt.fspath>
+0 4300
+
+fl=~
+fn=<built-in method nt.mkdir>
+0 1154100
+
+fl=~
+fn=<built-in method nt.stat>
+0 1038500
+
+fl=~
+fn=<built-in method numpy.core._multiarray_umath.implement_array_function>
+0 631600
+cfl=G:\Python\venv\python3.9\lib\site-packages\numpy\core\fromnumeric.py
+cfn=prod
+calls=180 2912
+0 8766800
+
+fl=~
+fn=<method '__exit__' of '_io._IOBase' objects>
+0 844900
+
+fl=~
+fn=<method 'append' of 'list' objects>
+0 193600
+
+fl=~
+fn=<method 'astype' of 'numpy.ndarray' objects>
+0 324800
+
+fl=~
+fn=<method 'choice' of 'numpy.random.mtrand.RandomState' objects>
+0 12968500
+cfl=<__array_function__ internals>
+cfn=prod
+calls=180 2
+0 10368100
+
+fl=~
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 2000
+
+fl=~
+fn=<method 'endswith' of 'str' objects>
+0 10600
+
+fl=~
+fn=<method 'flush' of '_io.TextIOWrapper' objects>
+0 8700
+
+fl=~
+fn=<method 'items' of 'dict' objects>
+0 129200
+
+fl=~
+fn=<method 'reduce' of 'numpy.ufunc' objects>
+0 4813500
+
+fl=~
+fn=<method 'replace' of 'str' objects>
+0 7000
+
+fl=~
+fn=<method 'rstrip' of 'str' objects>
+0 4400
+
+fl=~
+fn=<method 'uniform' of 'numpy.random.mtrand.RandomState' objects>
+0 8699000
+
+fl=~
+fn=<method 'write' of '_io.TextIOWrapper' objects>
+0 111500
+
+fl=~
+fn=<method 'writelines' of '_io._IOBase' objects>
+0 681000
+
