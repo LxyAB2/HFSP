@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f75b47-6032-4fb8-bbf2-6399ed89c19d" name="Default Changelist" comment="Add files via upload." />
+    <list default="true" id="63f75b47-6032-4fb8-bbf2-6399ed89c19d" name="Default Changelist" comment="Add files via upload.">
+      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/Code/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GA_HFSP/real1/Code/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/GanttChart/1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GA_HFSP/real1/GanttChart/1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA_HFSP/real1/Record/1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GA_HFSP/real1/Record/1.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.plot_gantt_chart">
+  <component name="RunManager" selected="Python.test_ga_hfsp">
     <configuration name="plot_gantt_chart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HFSP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.plot_gantt_chart" />
         <item itemvalue="Python.test_ga_hfsp" />
+        <item itemvalue="Python.plot_gantt_chart" />
         <item itemvalue="Python.test_utils_data" />
       </list>
     </recent_temporary>

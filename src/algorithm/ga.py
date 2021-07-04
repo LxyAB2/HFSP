@@ -48,19 +48,13 @@ class Ga:
     def decode(self, code):
         pass
 
-    def update_best(self):
-        self.best[2] = max(self.pop[2])
-        index = self.pop[2].index(self.best[2])
-        self.best[1] = self.pop[1][index]
-        self.best[0] = self.pop[0][index]
-        self.best[3] = self.tabu_list[index]
-
     def append_individual(self, info_new):
         obj_new, fit_new = self.get_obj_fit(info_new)
         self.pop[0].append(info_new)
         self.pop[1].append(obj_new)
         self.pop[2].append(fit_new)
         self.tabu_list.append([])
+        self.replace_best(info_new, obj_new, fit_new)
 
     def replace_individual(self, i, info_new):
         obj_new, fit_new = self.get_obj_fit(info_new)
@@ -69,6 +63,14 @@ class Ga:
             self.pop[1][i] = obj_new
             self.pop[2][i] = fit_new
             self.tabu_list[i] = []
+            self.replace_best(info_new, obj_new, fit_new)
+
+    def replace_best(self, info_new, obj_new, fit_new):
+        if Utils.update_info(self.best[1], obj_new):
+            self.best[0] = info_new
+            self.best[1] = obj_new
+            self.best[2] = fit_new
+            self.best[3] = []
 
     def show_generation(self, g):
         self.record[2].append(self.best[1])
@@ -110,21 +112,30 @@ class Ga:
             self.pop[2].append(pop[2][j])
             self.tabu_list[i] = tabu_list[j]
 
+    def update_best(self):
+        self.best[2] = max(self.pop[2])
+        index = self.pop[2].index(self.best[2])
+        self.best[1] = self.pop[1][index]
+        self.best[0] = self.pop[0][index]
+        self.best[3] = self.tabu_list[index]
+
     def save_best(self):
         self.pop[0][0] = self.best[0]
         self.pop[1][0] = self.best[1]
         self.pop[2][0] = self.best[2]
         self.tabu_list[0] = self.best[3]
 
-    def do_selection(self):
+    @property
+    def func_selection(self):
         func_dict = {
             Selection.default: self.selection_roulette,
             Selection.roulette: self.selection_roulette,
             Selection.champion2: self.selection_champion2,
         }
-        func = func_dict[self.schedule.ga_operator[Selection.name]]
-        self.update_best()
-        func()
+        return func_dict[self.schedule.ga_operator[Selection.name]]
+
+    def do_selection(self):
+        self.func_selection()
         self.save_best()
 
     def do_init(self):
@@ -155,7 +166,9 @@ class Ga:
         Utils.print("{}Evolution {}  start{}".format("=" * 48, exp_no, "=" * 48), fore=Utils.fore().LIGHTYELLOW_EX)
         self.clear()
         self.do_init()
+        self.update_best()
         self.do_selection()
+        self.show_generation(0)
         for g in range(1, self.max_generation + 1):
             if self.reach_best_known_solution():
                 break
@@ -193,9 +206,7 @@ class GaHfsp(Ga):
             self.pop[0].append(info)
             self.pop[1].append(obj)
             self.pop[2].append(fit)
-        self.update_best()
         self.record[1].append(time.perf_counter())
-        self.show_generation(0)
 
     def do_crossover(self, i, j, p):
         if p < self.rc:
